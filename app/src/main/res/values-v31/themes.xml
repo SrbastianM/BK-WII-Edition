@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Base.Theme.BKWIIEdition" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <item name="android:statusBarColor">@color/khaki</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/quiz_icon</item>
+        <item name="android:windowSplashScreenIconBackgroundColor">@color/khaki</item>
+    </style>
+
+</resources>

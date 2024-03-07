@@ -2,7 +2,7 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.BKWIIEdition" parent="Theme.Material3.DayNight.NoActionBar">
 
-        <item name="colorPrimary">@color/my_light_primary</item>
+        <item name="android:statusBarColor">@color/khaki</item>
     </style>
 
     <style name="Theme.BKWIIEdition" parent="Base.Theme.BKWIIEdition" />
