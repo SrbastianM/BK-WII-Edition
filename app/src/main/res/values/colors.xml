@@ -2,4 +2,16 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <!--    light theme colors-->
+    <color name="light_beige">#faeee3</color>
+    <color name="dark_blue">#001F3F</color>
+    <color name="light_green">#89ac76</color>
+    <color name="light_red">#ec5252 </color>
+
+    <!--    dark theme colors-->
+    <color name="khaki">#F0E68C</color>
+    <color name="green_military">#4b5320</color>
+    <color name="steel_gray">#808080</color>
+    <color name="dark_gray">#333333</color>
+    <color name="deep_red">#8B0000</color>
 </resources>
