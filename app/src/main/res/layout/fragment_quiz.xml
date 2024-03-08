@@ -4,80 +4,84 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/light_beige"
     tools:context=".view.FragmentQuiz">
 
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:orientation="horizontal"
         android:padding="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_question"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/courier_regular"
-            android:textSize="20sp"
-            android:textColor="@color/dark_blue"
             android:layout_weight="1"
-            android:text="@string/correct_text"/>
+            android:fontFamily="@font/courier_regular"
+            android:text="@string/correct_text"
+            android:textColor="@color/dark_blue"
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/tv_correct_number"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/courier_regular"
-            android:textSize="20sp"
-            android:textColor="@color/dark_blue"
-            android:gravity="center"
             android:layout_weight="1"
-            android:text="@string/correct_number"/>
+            android:fontFamily="@font/courier_regular"
+            android:gravity="center"
+            android:text="@string/correct_number"
+            android:textColor="@color/dark_blue"
+            android:textSize="20sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/courier_regular"
-            android:textSize="20sp"
-            android:textColor="@color/dark_blue"
             android:layout_weight="1"
-            android:text="@string/empty_text"/>
+            android:fontFamily="@font/courier_regular"
+            android:text="@string/empty_text"
+            android:textColor="@color/dark_blue"
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/tv_empty_number"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/courier_regular"
-            android:textSize="20sp"
-            android:gravity="center"
-            android:textColor="@color/dark_blue"
             android:layout_weight="1"
+            android:fontFamily="@font/courier_regular"
+            android:gravity="center"
             android:text="@string/empty_number"
-            />
+            android:textColor="@color/dark_blue"
+            android:textSize="20sp" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/courier_regular"
-            android:textSize="20sp"
-            android:gravity="center"
-            android:textColor="@color/dark_blue"
             android:layout_weight="1"
-            android:text="@string/wrong_text"/>
+            android:fontFamily="@font/courier_regular"
+            android:gravity="center"
+            android:text="@string/wrong_text"
+            android:textColor="@color/dark_blue"
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/tv_wrong_number"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/courier_regular"
-            android:textSize="20sp"
-            android:gravity="center"
-            android:textColor="@color/dark_blue"
             android:layout_weight="1"
-            android:text="@string/wrong_number"/>
+            android:fontFamily="@font/courier_regular"
+            android:gravity="center"
+            android:text="@string/wrong_number"
+            android:textColor="@color/dark_blue"
+            android:textSize="20sp" />
 
 
     </LinearLayout>
@@ -87,12 +91,128 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="176dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="177dp"
+        android:fontFamily="@font/courier_regular"
         android:text="@string/question_number"
         android:textColor="@color/dark_blue"
         android:textSize="24sp"
-        android:fontFamily="@font/courier_regular"
+        app:layout_constraintBottom_toTopOf="@+id/iv_question"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="64dp" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <ImageView
+        android:id="@+id/iv_question"
+        android:layout_width="320dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="18dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/airplane"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_question"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="vertical"
+        android:padding="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnNext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_question"
+        app:layout_constraintVertical_bias="0.5">
+
+        <Button
+            android:id="@+id/btnA"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="30dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/courier_regular"
+            android:text="@string/button_option"
+            android:textColor="@color/dark_blue"
+            android:textSize="20sp"
+            app:cornerRadius="10dp"
+            app:strokeColor="@color/light_blue" />
+
+        <Button
+            android:id="@+id/btnB"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="30dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/courier_regular"
+            android:text="@string/button_option"
+            android:textColor="@color/dark_blue"
+            android:textSize="20sp"
+            app:cornerRadius="10dp"
+            app:strokeColor="@color/light_blue" />
+
+        <Button
+            android:id="@+id/btnC"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="30dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/courier_regular"
+            android:text="@string/button_option"
+            android:textColor="@color/dark_blue"
+            android:textSize="20sp"
+            app:cornerRadius="10dp"
+            app:strokeColor="@color/light_blue" />
+
+        <Button
+            android:id="@+id/btnD"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="30dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/courier_regular"
+            android:text="@string/button_option"
+            android:textColor="@color/dark_blue"
+            android:textSize="20sp"
+            app:cornerRadius="10dp"
+            app:strokeColor="@color/light_blue" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="42dp"
+        android:backgroundTint="@color/dark_blue"
+        android:drawableEnd="@drawable/next"
+        android:fontFamily="@font/courier_regular"
+        android:text="@string/button_next"
+        android:textSize="20sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.5" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
