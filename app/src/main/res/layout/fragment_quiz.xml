@@ -145,7 +145,7 @@
             android:text="@string/button_option"
             android:textColor="@color/dark_blue"
             android:textSize="20sp"
-            app:cornerRadius="10dp"
+            app:cornerRadius="14dp"
             app:strokeColor="@color/light_blue" />
 
         <Button
@@ -161,7 +161,7 @@
             android:text="@string/button_option"
             android:textColor="@color/dark_blue"
             android:textSize="20sp"
-            app:cornerRadius="10dp"
+            app:cornerRadius="14dp"
             app:strokeColor="@color/light_blue" />
 
         <Button
@@ -177,7 +177,7 @@
             android:text="@string/button_option"
             android:textColor="@color/dark_blue"
             android:textSize="20sp"
-            app:cornerRadius="10dp"
+            app:cornerRadius="14dp"
             app:strokeColor="@color/light_blue" />
 
         <Button
@@ -193,7 +193,7 @@
             android:text="@string/button_option"
             android:textColor="@color/dark_blue"
             android:textSize="20sp"
-            app:cornerRadius="10dp"
+            app:cornerRadius="14dp"
             app:strokeColor="@color/light_blue" />
 
     </LinearLayout>
@@ -208,6 +208,7 @@
         android:drawableEnd="@drawable/next"
         android:fontFamily="@font/courier_regular"
         android:text="@string/button_next"
+        android:textColor="@color/light_beige"
         android:textSize="20sp"
         app:cornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
