@@ -1,3 +1,23 @@
 <resources>
-    <string name="app_name">BK-WII Edition</string>
+    <string name="app_name">Battle for Knowledge</string>
+    <string name="app_name_subtitle">WW II</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <!--    quiz screen strings-->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="btn_start">Start</string>
+    <string name="question_number">Question: 1</string>
+    <string name="correct_text">Correct: </string>
+    <string name="correct_number">0</string>
+    <string name="empty_text">Empty: </string>
+    <string name="empty_number">0</string>
+    <string name="wrong_text">Wrong: </string>
+    <string name="wrong_number">0</string>
+    <string name="button_option">Answer</string>
+    <string name="button_next">Next</string>
+    <!--    result strings-->
+    <string name="your_result">Your Result</string>
+    <string name="btn_again">New Quiz</string>
+    <string name="btn_exit">Exit</string>
+
 </resources>
