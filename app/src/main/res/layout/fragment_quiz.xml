@@ -90,13 +90,13 @@
         android:id="@+id/tvQuestion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="176dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="177dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
         android:fontFamily="@font/courier_regular"
         android:text="@string/question_number"
         android:textColor="@color/dark_blue"
-        android:textSize="24sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/ivQuestion"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -105,8 +105,8 @@
 
     <ImageView
         android:id="@+id/ivQuestion"
-        android:layout_width="320dp"
-        android:layout_height="240dp"
+        android:layout_width="280dp"
+        android:layout_height="220dp"
         android:layout_marginTop="18dp"
         android:scaleType="centerCrop"
         android:src="@drawable/airplane"
@@ -136,7 +136,7 @@
             android:id="@+id/btnA"
             style="@style/Widget.Material3.Button.OutlinedButton"
             android:layout_width="match_parent"
-            android:layout_height="55dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
             android:layout_marginTop="4dp"
             android:layout_marginEnd="30dp"
@@ -144,7 +144,7 @@
             android:fontFamily="@font/courier_regular"
             android:text="@string/button_option"
             android:textColor="@color/dark_blue"
-            android:textSize="20sp"
+            android:textSize="16sp"
             app:cornerRadius="14dp"
             app:strokeColor="@color/light_blue" />
 
@@ -152,7 +152,7 @@
             android:id="@+id/btnB"
             style="@style/Widget.Material3.Button.OutlinedButton"
             android:layout_width="match_parent"
-            android:layout_height="55dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
             android:layout_marginTop="4dp"
             android:layout_marginEnd="30dp"
@@ -160,7 +160,7 @@
             android:fontFamily="@font/courier_regular"
             android:text="@string/button_option"
             android:textColor="@color/dark_blue"
-            android:textSize="20sp"
+            android:textSize="16sp"
             app:cornerRadius="14dp"
             app:strokeColor="@color/light_blue" />
 
@@ -168,7 +168,7 @@
             android:id="@+id/btnC"
             style="@style/Widget.Material3.Button.OutlinedButton"
             android:layout_width="match_parent"
-            android:layout_height="55dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
             android:layout_marginTop="4dp"
             android:layout_marginEnd="30dp"
@@ -176,7 +176,7 @@
             android:fontFamily="@font/courier_regular"
             android:text="@string/button_option"
             android:textColor="@color/dark_blue"
-            android:textSize="20sp"
+            android:textSize="16sp"
             app:cornerRadius="14dp"
             app:strokeColor="@color/light_blue" />
 
@@ -184,7 +184,7 @@
             android:id="@+id/btnD"
             style="@style/Widget.Material3.Button.OutlinedButton"
             android:layout_width="match_parent"
-            android:layout_height="55dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
             android:layout_marginTop="4dp"
             android:layout_marginEnd="30dp"
@@ -192,7 +192,7 @@
             android:fontFamily="@font/courier_regular"
             android:text="@string/button_option"
             android:textColor="@color/dark_blue"
-            android:textSize="20sp"
+            android:textSize="16sp"
             app:cornerRadius="14dp"
             app:strokeColor="@color/light_blue" />
 
